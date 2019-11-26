@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Post</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="text-center">Post your images</h1>
+    <section class="form_section">
+        <input type="text" id="title" placeholder="Title" /> <br />
+        <input type="text" id="content" placeholder="Content" /><br />
+        <input type="file" id="imageFile" onchange="handleImagePick(this.files)" /><br />
+        <img id="myImage" height="200" />
+        <small style="color: maroon;" id="fileError"></small><br />
+        <button type="button" onclick="postDataToServer()">Post</button>
+    </section>
+    <section class="post_section" id="my_posts">
+    <!-- Posts content goes here -->
+    <h4 id="loader" class="text-center" style="margin-top:3rem">Loading...!</h4>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>

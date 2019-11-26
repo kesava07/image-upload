@@ -1,0 +1,68 @@
+body{
+    font-family: sans-serif;
+}
+.form_section{
+    width: 35%;
+    float: left;
+}
+.form_section::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.form_section input{
+    margin-bottom: 1.2rem;
+}
+.form_section input[type="text"]{
+    padding: 10px;
+    font-size: 20px;
+    width: 75%;
+}
+.form_section button{
+    padding: 10px 25px;
+    font-size: 1rem;
+}
+.text-center{
+    text-align: center;
+}
+.post_section{
+    width: 65%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.post_section::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.post_section .card{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.post_section .card::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.post_section .card h3{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.post_section .card p{
+    margin: 10px 0;
+    color: darkslategrey;
+}
+.post_section .card-body{
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.post_section .card-body button{
+    padding: 5px 10px;
+    font-size: 16px;
+}
