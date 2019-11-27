@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const path = require('path');
 
-mongoose.connect("mongodb+srv://kesava07:14NGEVtjf1tmLkWe@cluster0-wx6ar.mongodb.net/node-angular?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://kesava07:<password>@cluster0-wx6ar.mongodb.net/node-angular?retryWrites=true&w=majority")
     .then(() => {
         console.log("connected")
     }).catch(() => {
